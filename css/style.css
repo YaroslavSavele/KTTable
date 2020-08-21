@@ -94,7 +94,8 @@ h6 {
 	font-size: 2.5rem;
 }
 .children,
-.woman {
+.woman,
+.man {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	max-width: 1062px;
@@ -102,12 +103,14 @@ h6 {
 	margin: 1em auto 1em auto;
 	font-weight: bold;
 }
-.woman{
+.woman,
+.man {
 	gap: 2em;
 }
 @media (max-width: 600px) {
 	.children,
-	.woman {
+	.woman,
+	.man {
 		grid-template-columns: 1fr;
 	}
 	.title-wares {
@@ -127,7 +130,8 @@ h6 {
 	grid-template-rows: repeat(20, 1fr);
 	border: 1px solid black;
 }
-.woman__poduct {
+.woman__poduct,
+.man__poduct {
 	display: grid;
 	grid-template-columns: 0.5fr 1fr 1fr;
 	grid-template-rows: repeat(21, 1fr);
@@ -139,10 +143,17 @@ h6 {
 	grid-template-rows: repeat(14, 1fr);
 	border: 1px solid black;
 }
+.man__socks {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+	border: 1px solid black;
+}
 
 .children__poduct-title,
 .children__socks-title,
-.woman__socks-title {
+.woman__socks-title,
+.man__socks-title {
 	grid-column: 1 / -1;
 	text-align: center;
 	font-size: 1.7rem;
@@ -151,6 +162,7 @@ h6 {
 .children__poduct-subtitle,
 .children__socks-subtitle,
 .woman__poduct-subtitle,
+.man__poduct-subtitle,
 .woman__socks-subtitle,
 .man__socks-subtitle {
 	font-size: 1.2rem;
@@ -159,7 +171,8 @@ h6 {
 	text-align: center;
 	padding-top: 0.2em;
 }
-.woman__poduct-title {
+.woman__poduct-title,
+.man__poduct-title {
    text-align: center;
 	font-size: 1.37rem;
 	padding-top: 0.1em;
@@ -172,6 +185,7 @@ h6 {
 
 .children__poduct-size,
 .woman__poduct-size,
+.man__poduct-size,
 .children__socks-socks,
 .woman__socks-socks,
 .man__socks-socks {
@@ -184,6 +198,7 @@ h6 {
 }
 .children__poduct-chest,
 .woman__poduct-chest,
+.man__poduct-chest,
 .children__socks-foot,
 .woman__socks-foot,
 .man__socks-foot {
@@ -197,6 +212,7 @@ h6 {
 .children__poduct-height,
 .children__socks-shouse,
 .woman__poduct-hips,
+.man__poduct-hips,
 .woman__socks-shouse,
 .man__socks-shouse {
 	grid-column-start: 3;
@@ -232,6 +248,7 @@ h6 {
 .belt,
 .children__socks-shouse,
 .woman__poduct-hips,
+.man__poduct-hips,
 .woman__socks-shouse,
 .man__socks-shouse {
 	border-right: none;
