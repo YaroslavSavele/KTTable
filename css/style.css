@@ -89,75 +89,80 @@ h6 {
 }*/
 /*Reset end*/
 
+:root {
+   --strip-color: #e7e0e0;
+}
+
 .title-wares {
-	text-align: center;
-	font-size: 2.5rem;
+   text-align: center;
+   font-size: 2.5rem;
 }
 .children,
 .woman,
 .man {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	max-width: 1062px;
-	gap: 5em;
-	margin: 1em auto 1em auto;
-	font-weight: bold;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   max-width: 1062px;
+   gap: 5em;
+   margin: 1em auto 1em auto;
+   font-weight: bold;
 }
 .woman,
 .man {
-	gap: 2em;
+   gap: 2em;
 }
 @media (max-width: 600px) {
-	.children,
-	.woman,
-	.man {
-		grid-template-columns: 1fr;
-	}
-	.title-wares {
-		font-size: 2rem;
-	}
+   .children,
+   .woman,
+   .man {
+      grid-template-columns: 1fr;
+   }
+   .title-wares {
+      font-size: 2rem;
+   }
 }
 
 .children__poduct {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(18, 1fr);
-	border: 1px solid black;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(18, 1fr);
+   border: 1px solid black;
 }
 .children__socks {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(20, 1fr);
-	border: 1px solid black;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(20, 1fr);
+   border: 1px solid black;
 }
 .woman__poduct,
 .man__poduct {
-	display: grid;
-	grid-template-columns: 0.5fr 1fr 1fr;
-	grid-template-rows: repeat(21, 1fr);
-	border: 1px solid black;
+   display: grid;
+   grid-template-columns: 0.5fr 1fr 1fr;
+   grid-template-rows: repeat(21, 1fr);
+   border: 1px solid black;
 }
 .woman__socks {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(14, 1fr);
-	border: 1px solid black;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(14, 1fr);
+   border: 1px solid black;
 }
 .man__socks {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(16, 1fr);
-	border: 1px solid black;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(16, 1fr);
+   border: 1px solid black;
 }
 
 .children__poduct-title,
 .children__socks-title,
 .woman__socks-title,
 .man__socks-title {
-	grid-column: 1 / -1;
-	text-align: center;
-	font-size: 1.7rem;
-	padding-top: 0.1em;
+   grid-column: 1 / -1;
+   text-align: center;
+   font-size: 1.7rem;
+   padding-top: 0.1em;
+   background-color: var(--strip-color);
 }
 .children__poduct-subtitle,
 .children__socks-subtitle,
@@ -165,22 +170,23 @@ h6 {
 .man__poduct-subtitle,
 .woman__socks-subtitle,
 .man__socks-subtitle {
-	font-size: 1.2rem;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	text-align: center;
-	padding-top: 0.2em;
+   font-size: 1.2rem;
+   border-top: 1px solid black;
+   border-right: 1px solid black;
+   text-align: center;
+   padding-top: 0.2em;
+   background-color: var(--strip-color);
 }
 .woman__poduct-title,
 .man__poduct-title {
    text-align: center;
-	font-size: 1.37rem;
-	padding-top: 0.1em;
-	border-right: 1px solid black;
+   font-size: 1.37rem;
+   padding-top: 0.1em;
+   border-right: 1px solid black;
+   background-color: var(--strip-color);
 }
 .shoulders {
-	grid-column: 2 / 3;
-	
+   grid-column: 2 / 3;
 }
 
 .children__poduct-size,
@@ -189,12 +195,14 @@ h6 {
 .children__socks-socks,
 .woman__socks-socks,
 .man__socks-socks {
-	grid-column: 1 / 2;
-	text-align: center;
-	font-size: 1.1rem;
-	padding-top: 0.3em;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
+   grid-column: 1 / 2;
+   font-size: 1.1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px solid black;
+   border-right: 1px solid black;
 }
 .children__poduct-chest,
 .woman__poduct-chest,
@@ -202,12 +210,14 @@ h6 {
 .children__socks-foot,
 .woman__socks-foot,
 .man__socks-foot {
-	grid-column: 2 / 3;
-	text-align: center;
-	font-size: 1.1rem;
-	padding-top: 0.3em;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
+   grid-column: 2 / 3;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.1rem;
+   border-top: 1px solid black;
+   border-right: 1px solid black;
 }
 .children__poduct-height,
 .children__socks-shouse,
@@ -215,23 +225,27 @@ h6 {
 .man__poduct-hips,
 .woman__socks-shouse,
 .man__socks-shouse {
-	grid-column-start: 3;
-	text-align: center;
-	font-size: 1.1rem;
-	padding-top: 0.3em;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
+   grid-column-start: 3;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.1rem;
+   border-top: 1px solid black;
+   border-right: 1px solid black;
 }
 .children__poduct-age {
-	grid-column-start: 4;
-	text-align: center;
-	font-size: 1.1rem;
-	padding-top: 0.3em;
-	border-top: 1px solid black;
+   grid-column-start: 4;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.1rem;
+   border-top: 1px solid black;
 }
 .woman__socks-subtitle,
 .man__socks-subtitle {
-	padding: 0.4em;
+   padding: 0.4em;
 }
 .woman__socks-socks,
 .man__socks-socks,
@@ -239,9 +253,14 @@ h6 {
 .man__socks-foot,
 .woman__socks-shouse,
 .man__socks-shouse {
-	padding: 0.5em;
+   padding: 0.5em;
 }
+ 
 
+/*.man__poduct-size,
+.woman__poduct-size {
+   padding-top: 0.3em;
+}*/
 .age,
 .shoese,
 .hips,
@@ -251,63 +270,71 @@ h6 {
 .man__poduct-hips,
 .woman__socks-shouse,
 .man__socks-shouse {
-	border-right: none;
+   border-right: none;
 }
 .item1 {
-	grid-row: 3 / 4;
+   grid-row: 3 / 4;
 }
 .item2 {
-	grid-row: 4 / 5;
+   grid-row: 4 / 5;
+   background-color: var(--strip-color);
 }
 .item3 {
-	grid-row-start: 5;
+   grid-row-start: 5;
 }
 .item4 {
-	grid-row-start: 6;
+   grid-row-start: 6;
+   background-color: var(--strip-color);
 }
 .item5 {
-	grid-row-start: 7;
+   grid-row-start: 7;
 }
 .item6 {
-	grid-row-start: 8;
+   grid-row-start: 8;
+   background-color: var(--strip-color);
 }
 .item7 {
-	grid-row-start: 9;
+   grid-row-start: 9;
 }
 .item8 {
-	grid-row-start: 10;
+   grid-row-start: 10;
+   background-color: var(--strip-color);
 }
 .item9 {
-	grid-row-start: 11;
+   grid-row-start: 11;
 }
 .item10 {
-	grid-row-start: 12;
+   grid-row-start: 12;
+   background-color: var(--strip-color);
 }
 .item11 {
-	grid-row-start: 13;
+   grid-row-start: 13;
 }
 .item12 {
-	grid-row-start: 14;
+   grid-row-start: 14;
+   background-color: var(--strip-color);
 }
 .item13 {
-	grid-row-start: 15;
+   grid-row-start: 15;
 }
 .item14 {
-	grid-row-start: 16;
+   grid-row-start: 16;
+   background-color: var(--strip-color);
 }
 .item15 {
-	grid-row-start: 17;
+   grid-row-start: 17;
 }
 .item16 {
-	grid-row-start: 18;
+   grid-row-start: 18;
+   background-color: var(--strip-color);
 }
 .item17 {
-	grid-row-start: 19;
+   grid-row-start: 19;
 }
 .item18 {
-	grid-row-start: 20;
-} 
-item19 {
-	grid-row-start: 21;
+   grid-row-start: 20;
+   background-color: var(--strip-color);
 }
-
+item19 {
+   grid-row-start: 21;
+}
